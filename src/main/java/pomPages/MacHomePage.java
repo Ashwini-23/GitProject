@@ -19,7 +19,11 @@ public class MacHomePage {
 	@FindBy(xpath="//a[text()=\"Eyeliner\"]")
 	private WebElement eyelinearl;
 	
+	@FindBy(xpath="//i[@class=\"icomoon-bag1 nw-mybagbutton-icon\"]")
+	private WebElement bagiconbtn;
 	
+	@FindBy(xpath="//button[text()=\"CONTINUE SHOPPING\"]")
+	private WebElement continueshoppingbtn;
 
 	public MacHomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -38,6 +42,14 @@ public class MacHomePage {
 	}
 	public WebElement getMakeupbtn() {
 		return makeupbtn;
+	}
+	
+	public void bagiconbutton() {
+		bagiconbtn.click();
+	}
+	
+	public void continueshoppingbutton() {
+		continueshoppingbtn.click();
 	}
 
 }
