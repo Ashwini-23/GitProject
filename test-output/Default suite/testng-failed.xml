@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.shopEyelinear">
+      <class name="scripts.shopLipstick">
         <methods>
-          <include name="getEyelinear"/>
           <include name="openApp"/>
+          <include name="getLipstick"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- scripts.shopEyelinear -->
+      </class> <!-- scripts.shopLipstick -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

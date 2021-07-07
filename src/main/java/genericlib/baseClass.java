@@ -32,7 +32,7 @@ public class baseClass{
 			screenShot s = new screenShot();
 			s.getPhoto(driver, name);
 		}
-		driver.close();
+		driver.quit();
 	}
 	
 	

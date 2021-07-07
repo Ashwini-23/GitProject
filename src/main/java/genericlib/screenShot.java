@@ -11,13 +11,14 @@ import org.openqa.selenium.WebDriver;
 
 public class screenShot implements autoConstant {
 	
-	public void getPhoto(WebDriver driver,String name) throws IOException {
+	public String getPhoto(WebDriver driver,String name) throws IOException {
 		Date d = new Date();
 		String date = d.toString().replace("-", ":");
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File(photopath+date+name+".png");
 		FileUtils.copyFile(src, dest);
+		return date;
 		
 		
 		
